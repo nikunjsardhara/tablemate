@@ -6,7 +6,8 @@
 **Stack:** Next.js (App Router, TypeScript), Gemini API (`@google/genai`), Cloud SQL for PostgreSQL, Tailwind CSS, deployed on Cloud Run (or Vercel for speed)
 
 ---
-
+Use available Google cloud skills.
+Minimal focus on design, more on completing working demo of this app so that I can demo it in the hackathon
 ## 1. Problem & Idea
 
 People in cafés often want to find someone specific: a co-founder who thinks a certain way, a language partner, a mentor, a study buddy, a designer with an opinion. Today they can only hope the right person happens to sit nearby.
