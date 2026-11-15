@@ -154,7 +154,7 @@ function AnswerFlow({
           Your answers were sent
         </h2>
         <p className="text-sm text-zinc-500">
-          If they're a strong match, you'll get an invitation in your inbox.
+          If they&apos;re a strong match, you&apos;ll get an invitation in your inbox.
         </p>
         <Link href="/">
           <Button variant="secondary">Back to listings</Button>
@@ -473,7 +473,7 @@ function ShareModal({
 
         <p className="text-xs leading-relaxed text-zinc-500">
           ☕ Meet only at this café, during opening hours, in a public space. If
-          it's not a fit, they can decline quietly — no notifications, no
+          it&apos;s not a fit, they can decline quietly — no notifications, no
           awkwardness.
         </p>
 

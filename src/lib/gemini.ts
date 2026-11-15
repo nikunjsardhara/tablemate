@@ -1,4 +1,4 @@
-import { GoogleGenAI, Type, ThinkingLevel, type Schema } from "@google/genai";
+import { GoogleGenAI, ThinkingLevel, type Schema } from "@google/genai";
 
 export const GEMINI_MODEL = process.env.GEMINI_MODEL ?? "gemini-3.8-flash";
 

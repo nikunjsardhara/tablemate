@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { query, queryOne } from "@/lib/db";
 import { apiError } from "@/lib/api-helpers";
 import { readSessionId } from "@/lib/session";
-import type { Answer, ListingDetail, Question, RankedResponse } from "@/lib/types";
+import type { Answer, ListingDetail, Question } from "@/lib/types";
 
 /**
  * Single detail endpoint with two shapes, decided by the session:
@@ -132,7 +132,13 @@ export async function GET(
         },
         answers: answers
           .filter((answer) => answer.response_id === response.id)
-          .map(({ id: answerId, response_id: _r, ...rest }) => ({ id: answerId, ...rest })),
+          .map((answer) => ({
+            id: answer.id,
+            question_id: answer.question_id,
+            body: answer.body,
+            score: answer.score,
+            rationale: answer.rationale,
+          })),
         invitation: invitation ?? null,
       };
     });
